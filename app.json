@@ -1,13 +1,14 @@
 {
-  "name": "Contentful Gatsby Starter",
-  "description": "Gatsby starter for a Contentful project.",
+  "name": "Krishna Jeyakumar Graphic Design Portfolio",
+  "description": "Graphic design portfolio",
   "keywords": [
-    "contentful",
-    "gatsby",
-    "static",
-    "ssg"
+    "Krishna Jeyakumar",
+    "Creative Director",
+    "Graphic Designer",
+    "Digital Artist",
+    "Northern Virginia"
   ],
-  "repository": "https://github.com/contentful-userland/gatsby-contentful-starter",
+  "repository": "https://github.com/AJC-147/Jeyakumar-ContentfulPortfolio",
   "success_url": "/",
   "buildpacks": [
     {
