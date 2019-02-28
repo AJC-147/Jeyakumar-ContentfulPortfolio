@@ -5,7 +5,6 @@
   position: relative;
   height: 100vh;
   overflow-y: hidden;
-  /* background: purple; */
 }
 
 .first-letter,
@@ -36,6 +35,7 @@ h1 {
 /*   height: 100vh; */
   overflow: hidden;
   scroll-snap-align: center;
+  transition: all 1s ease-in-out;
 }
 .concept:before {
   content: "";
@@ -65,11 +65,19 @@ h1 {
   overflow: visible;
 }
 
-.first-name:active {
+.scrolled-first {
+    position: fixed;
     top: 0px;
     left: 50%;
     transform: translate(-50% , 0%);
-    transition: all .12s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.scrolled-last {
+    /* visibility: hidden; */
+    position: fixed;
+    left: -75px;
+    transition: all 1s ease-in-out;
 }
 
 .last-name {

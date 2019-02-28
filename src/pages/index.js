@@ -5,8 +5,9 @@ import Hero from '../components/hero'
 import ArticlePreview from '../components/article-preview'
 import HoverName from '../components/hoverName'
 import DigitalArtwork from '../components/digital-artwork'
+import FixedScrolling from '../components/fixedScrolling'
 
-class RootIndex extends React.Component {
+class HomePage extends React.Component {
   render() {
     const siteTitle = get(this, 'props.data.site.siteMetadata.title')
     const [author] = get(this, 'props.data.allContentfulPerson.edges')
@@ -15,6 +16,7 @@ class RootIndex extends React.Component {
     return (
   <div style={{ position: `relative` }}>
     <HoverName />
+    <FixedScrolling one="oneone" two="twotwo"/>
     <div style={{ background: 'red' }}>
       <Helmet title={siteTitle} />
       <Hero data={author.node} />
@@ -38,7 +40,7 @@ class RootIndex extends React.Component {
 }
 }
 
-export default RootIndex
+export default HomePage
 
 export const pageQuery = graphql`
 query HomeQuery {
