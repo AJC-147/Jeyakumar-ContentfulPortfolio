@@ -1,9 +1,10 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import { Link } from 'gatsby'
 import base from './base.css'
-import Container from '../components/container'
+import Container from './container'
+import Navigation from './navigation'
 
-class RootLayout extends React.Component {
+class Template extends React.Component {
   render() {
     const { location, children } = this.props
     let header
@@ -15,10 +16,11 @@ class RootLayout extends React.Component {
 
     return (
       <Container>
-        {children()}
+        <Navigation />
+        {children}
       </Container>
     )
   }
 }
 
-export default RootLayout
+export default Template
