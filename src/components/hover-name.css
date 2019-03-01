@@ -70,7 +70,7 @@ h1 {
 }
 
 #first-scrolled {
-  cursor: default;
+  /* cursor: default; */
     position: fixed;
     top: 0px;
     left: 50%;
@@ -79,20 +79,21 @@ h1 {
 }
 
 #last-scrolled {
-  cursor: default;
+  /* cursor: default; */
     /* visibility: hidden; */
     /* position: fixed; */
-    /* left: -75px; */
-    /* transition: all 1s ease-in-out; */
+    /* left: -150px; */
+    opacity: 0;
+    transition: all .5s ease-in-out;
 }
 
 #first-unscrolled {
-  cursor: default;
+  /* cursor: default; */
 
 }
 
 #last-unscrolled {
-  cursor: default;
+  /* cursor: default; */
 
 }
 
@@ -146,3 +147,9 @@ h1 {
   text-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
+
+/* @media only screen and (max-width: 562px) {
+    .first-name h1 {
+      font: 900 18.25vw Montserrat;
+    }
+} */
